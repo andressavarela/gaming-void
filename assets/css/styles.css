@@ -1,0 +1,385 @@
+* {
+  color: rgb(255, 255, 255);
+  margin: 0;
+  background-color: rgb(37, 37, 37);
+}
+
+body {
+  height: auto;
+  width: 100%;
+  background-color: rgb(37, 37, 37);
+}
+
+main{
+  padding-top: 5%;
+}
+
+
+.navbar-expand-lg {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
+}
+
+.heading {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 35px;
+  color: rgb(0, 238, 222);
+}
+
+.titulo {
+  color: rgb(0, 238, 222);
+}
+
+/* NAVBAR */
+
+nav .container-fluid a {
+  color: white;
+}
+
+nav .container-fluid a:hover {
+  color: rgb(164, 0, 205);
+}
+
+.c-dropdown {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgb(48, 48, 48);
+}
+
+.c-dropdown-item {
+  color: white;
+}
+
+.c-dropdown-item:hover {
+  background-color: rgb(73, 73, 73);
+  color: white;
+}
+
+.nav-link.show {
+  color: rgb(164, 0, 205) !important;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  background-image: url('/assets/images/bars.svg');
+}
+
+.navbar-toggler.navbar-toggler:focus {
+  box-shadow: 0 0 0 0;
+}
+
+.navbar-toggler {
+  display: flex;
+}
+
+.nav-link:focus {
+  color: rgb(164, 0, 205) !important;
+}
+
+.navbar-brand:focus {
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: rgb(164, 0, 205);
+  transition: 0.2s;
+
+}
+
+
+
+/*LOCALIZAÇÃO*/
+
+.location {
+  margin-top: 5%;
+  margin-left: 5%;
+  flex-wrap: wrap;
+  text-align: center;
+  position: relative;
+  width: 90%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.582);
+
+}
+
+.location .heading {
+  position: relative;
+  top: -4rem;
+  border: solid 1px;
+  border-radius: 10px 10px 0 0;
+}
+
+#carouselExampleInterval {
+  width: 47%;
+  height: 87%;
+  display: flex;
+  position: relative;
+  top: -2rem;
+  left: 1%;
+}
+
+.location .mapa {
+  width: 47%;
+  height: 87%;
+  border-radius: 0 0 10px 0;
+  margin-top: 6%;
+  position: absolute;
+  top: -3.2rem;
+  left: 52%;
+}
+
+/*home */
+
+.home {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.home .start {
+  text-align: center;
+  width: 50%;
+  height: 20%;
+  margin-left: 25%;
+  font-size: 16px;
+  margin-top: 5%;
+  background-image: url(/assets/images/small-arcade-waves.jpeg);
+  background-color: #060a5a56;
+}
+
+
+/* sobre nos*/
+
+
+
+.about .heading {
+  text-align: center;
+
+}
+
+#about img {
+  height: max-content;
+  width: 25%;
+  height: 35rem;
+
+}
+
+
+#about {
+  margin: 50px 70px;
+  border: 20px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.about .aboutt {
+
+  text-align: justify;
+  color: rgb(220, 220, 220);
+  width: 40rem;
+  height: 35rem;
+  padding: 40px 40px;
+  background-color: rgb(27, 9, 54);
+  margin-left: 15px;
+  font-size: 16px;
+  border-radius: 0 0 10px 0;
+  background-image: url(/assets/images/arcade-waves.jpeg);
+  background-size: cover;
+  background-color: 0, 0, 1;
+}
+
+.home p {
+  text-align: justify;
+  color: rgb(220, 220, 220);
+  width: 15rem;
+  height: 15rem;
+  padding: 40px 40px;
+  background-color: rgb(27, 9, 54);
+  margin-left: 15px;
+  font-size: 14.5px;
+  border-radius: 0 0 10px 0;
+  background-color: 0, 0, 1;
+}
+
+.separator {
+  border-bottom: 1px solid;
+  color: rgb(0, 238, 222);
+  height: 0%;
+}
+
+.mvv {
+  margin-bottom: 100px;
+  background-image: linear-gradient(to bottom, #3217772d, #090d6356);
+  background-image: -o-repeating-linear-gradient(to botoom);
+  background-position: ju;
+  padding-bottom: 50px;
+  padding-top: 40px;
+
+}
+
+
+.mvv .container {
+  margin-top: 10px;
+}
+
+.card-body .card-title {
+  color: rgb(109, 236, 236);
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.col-md-4 {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgb(210, 11, 236);
+}
+
+li {
+  margin-bottom: 10px;
+  color: rgba(255, 254, 254, 0.651);
+  font-size: 16px;
+}
+
+/*RODAPÉ*/
+
+#contactus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 25vh;
+  margin-top: 10%;
+}
+
+#contactus,
+#contactus p,
+#contactus strong,
+#contactus a {
+  background-color: hsl(0, 0%, 0%);
+
+}
+
+.conosco {
+
+  position: relative;
+  top: 20%;
+  background-color: black;
+  height: 5;
+  font-size: 20px;
+}
+
+.void {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: rgb(164, 0, 205);
+  padding-right: 1rem;
+}
+
+.contact-link{
+  text-decoration: none;
+  color: white;
+}
+
+.register {
+  margin-top: 10%;
+  margin-left: 5%;
+  flex-wrap: wrap;
+  text-align: center;
+  position: relative;
+  width: 90%;
+}
+
+.register .heading {
+  position: relative;
+  top: -2rem;
+  border: solid 1px;
+  border-radius: 10px 10px 0 0;
+}
+
+.container-fluido {
+  width: 90%;
+  max-width: 350px;
+  margin-top: 5%;
+  margin-left: 5%;
+  flex-wrap: wrap;
+  text-align: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.582);
+}
+
+
+#icon {
+  position: absolute;
+  margin-left: 22rem;
+  top: 50%;
+  transform: translateY(-490%);
+  background: url('/assets/images/olhoaberto.png');
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#icon.hide {
+  background: url('/assets/images/olhofechado.png');
+  background-size: cover;
+}
+
+.display-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.register {
+  padding-top: 0;
+}
+
+.teste {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 20%;
+  margin-bottom: -10%;
+}
+
+.teste h3 {
+  margin-top: -20%;
+  font-size: 40px;
+
+  color: rgb(109, 236, 236);
+}
+
+.teste p {
+  font-size: 20px;
+}
+
+.teste h5 {
+  margin-top: 10%;
+  color: red;
+  font-size: 20px;
+}
+
+.input-box {
+  margin-top: -5%;
+}
+
+.input-group {
+  margin-left: -5rem;
+}
+
+form .input {
+  text-align: start;
+
+}
