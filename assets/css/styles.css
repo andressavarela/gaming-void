@@ -204,11 +204,30 @@ nav .container-fluid a:hover {
   background-color: 0, 0, 1;
 }
 
-.separator {
+/* .separator {
   border-bottom: 1px solid;
   color: rgb(0, 238, 222);
   height: 0%;
+} */
+
+.separator-1 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla(176, 100%, 47%, 0.99),
+    hsla(176, 100%, 47%, 0.34)
+  );
 }
+
+.separator-2 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla(176, 100%, 47%, 0.34),
+    hsla(176, 100%, 47%, 0.99)
+  );
+}
+
 
 .mvv {
   margin-bottom: 100px;
@@ -217,6 +236,11 @@ nav .container-fluid a:hover {
   background-position: ju;
   padding-bottom: 50px;
   padding-top: 40px;
+  border-bottom: linear-gradient(
+    270deg,
+    hsla(176, 100%, 47%, 0.34),
+    hsla(176, 100%, 47%, 0.992)
+  );
 
 }
 
