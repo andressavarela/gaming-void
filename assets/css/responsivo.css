@@ -39,8 +39,8 @@
   }
 
   #about .about-flip {
-    margin-top: 10px;
     top: 34rem;
+    margin-top: 10px;
     position: absolute;
     height: 24%;
     width: 45%;
@@ -89,19 +89,21 @@
   }
 
   .register .teste {
-    margin-left: 1rem;
+    margin-left: 5rem;
     margin-top: -25rem;
 
   }
 
   .teste h3 {
-    width: 250%;
+    margin-left: 7rem;
+    width: 150%;
     font-size: 25px;
     z-index: 98;
   }
 
   .teste p {
-    width: 250%;
+    margin-left: 7rem;
+    width: 150%;
     font-size: 15px;
     z-index: 97;
   }
@@ -109,15 +111,17 @@
   .teste h5 {
     font-size: 20px;
     position: absolute;
-    top: 47rem;
-    margin-left: -1rem;
+    top: 45rem;
+    margin-left: 6rem;
     width: 100%;
     ;
   }
 
   .input-group {
     top: 10rem;
-    margin-left: -9rem;
+    margin-left: -12rem;
   }
-
+  .input-box {
+    width: 100rem;
+  }
 }
