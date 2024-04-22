@@ -17,6 +17,6 @@ Site criado para a aula de Desenvolvimento de Software para Web.
 </div>
 
 #
-<!---
-<h2>✨ <a href="https://pibcapaoredondo.vercel.app/" target"_blank">Clique aqui</a> para navegar por ele! ✨</h2>
--->
+
+<h2>✨ <a href="https://gaming-void.vercel.app/" target"_blank">Clique aqui</a> para navegar por ele! ✨</h2>
+
