@@ -10,7 +10,7 @@ body {
   background-color: rgb(37, 37, 37);
 }
 
-main{
+main {
   padding-top: 5%;
 }
 
@@ -24,8 +24,9 @@ main{
 
 .heading {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 35px;
+  font-size: 29px;
   color: rgb(0, 238, 222);
+  margin: 10px;
 }
 
 .titulo {
@@ -113,7 +114,7 @@ nav .container-fluid a:hover {
 
 #carouselExampleInterval {
   width: 47%;
-  height: 87%;
+  height: auto;
   display: flex;
   position: relative;
   top: -2rem;
@@ -150,45 +151,42 @@ nav .container-fluid a:hover {
 }
 
 
-/* sobre nos*/
-
-
+/* SOBRE NÓS*/
 
 .about .heading {
   text-align: center;
-
 }
-
-#about img {
-  height: max-content;
-  width: 25%;
-  height: 35rem;
-
-}
-
 
 #about {
-  margin: 50px 70px;
-  border: 20px;
+  margin: 70px 80px;
   display: flex;
   justify-content: center;
-
 }
 
-.about .aboutt {
+.about-flip,
+.aboutt {
+  display: inline-block;
+}
 
+#about .about-flip {
+  width: 35%;
+  height: auto;
+}
+
+
+
+.about .aboutt {
   text-align: justify;
   color: rgb(220, 220, 220);
-  width: 40rem;
-  height: 35rem;
-  padding: 40px 40px;
-  background-color: rgb(27, 9, 54);
-  margin-left: 15px;
-  font-size: 16px;
+  padding: 50px;
+  margin: 0;
+  margin-left: 16px;
+  font-size: 15px;
   border-radius: 0 0 10px 0;
   background-image: url(/assets/images/arcade-waves.jpeg);
   background-size: cover;
   background-color: 0, 0, 1;
+  border-radius: 10px;
 }
 
 .home p {
@@ -212,45 +210,36 @@ nav .container-fluid a:hover {
 
 .separator-1 {
   height: 1px;
-  background: linear-gradient(
-    270deg,
-    hsla(176, 100%, 47%, 0.99),
-    hsla(176, 100%, 47%, 0.34)
-  );
+  background: linear-gradient(270deg,
+      hsla(176, 100%, 47%, 0.99),
+      hsla(176, 100%, 47%, 0.34));
 }
 
 .separator-2 {
   height: 1px;
-  background: linear-gradient(
-    270deg,
-    hsla(176, 100%, 47%, 0.34),
-    hsla(176, 100%, 47%, 0.99)
-  );
+  background: linear-gradient(270deg,
+      hsla(176, 100%, 47%, 0.34),
+      hsla(176, 100%, 47%, 0.99));
 }
-
 
 .mvv {
   margin-bottom: 100px;
-  background-image: linear-gradient(to bottom, #3217772d, #090d6356);
+  background-image: linear-gradient(to bottom, #151a635e, #410e634d);
   background-image: -o-repeating-linear-gradient(to botoom);
   background-position: ju;
   padding-bottom: 50px;
   padding-top: 40px;
-  border-bottom: linear-gradient(
-    270deg,
-    hsla(176, 100%, 47%, 0.34),
-    hsla(176, 100%, 47%, 0.992)
-  );
-
+  border-bottom: linear-gradient(270deg,
+      hsla(176, 100%, 47%, 0.34),
+      hsla(176, 100%, 47%, 0.992));
 }
-
 
 .mvv .container {
   margin-top: 10px;
 }
 
 .card-body .card-title {
-  color: rgb(109, 236, 236);
+  color: rgb(3, 219, 201);
   text-align: center;
   font-size: 25px;
   margin-top: 20px;
@@ -309,7 +298,7 @@ li {
   padding-right: 1rem;
 }
 
-.contact-link{
+.contact-link {
   text-decoration: none;
   color: rgb(202, 243, 255);
 }
@@ -379,14 +368,14 @@ li {
 }
 
 .teste h3 {
-  margin-top: -20%;
-  font-size: 40px;
-
-  color: rgb(109, 236, 236);
+  margin-top: -25%;
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: rgb(6, 214, 214);
 }
 
 .teste p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .teste h5 {
@@ -405,5 +394,12 @@ li {
 
 form .input {
   text-align: start;
+  margin-bottom: 15px;
 
+}
+
+.input.checkPassword button {
+
+  color: rgba(140, 233, 250, 0.493);
+  border-color: rgba(140, 233, 250, 0.438);
 }
