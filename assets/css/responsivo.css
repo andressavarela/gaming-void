@@ -39,6 +39,7 @@
   }
 
   #about .about-flip {
+    margin-top: 10px;
     top: 34rem;
     position: absolute;
     height: 24%;
