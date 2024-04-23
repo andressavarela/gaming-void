@@ -252,34 +252,60 @@
 
                                 <div class="input">
                                     <label for="inputName" class="form-label">Nome Completo</label>
-                                    <input type="text" class="form-control" id="inputName" size="50" required>
+                                    <input type="text" class="form-control" id="inputName" size="50" required placeholder="Digite seu nome">
                                 </div>
 
                                 <div class="input">
                                     <label for="inputEmail" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="inputEmail" required>
+                                    <input type="email" class="form-control" id="inputEmail" required placeholder="Digite seu e-mail">
                                 </div>
 
                                 <div class="input">
                                     <label for="inputDocument" class="form-label">CPF</label>
                                     <div class="group">
-                                        <input type="text" class="form-control" id="inputDocument" required maxlength="14">
+                                        <input type="text" class="form-control" id="inputDocument" required maxlength="14"
+                                        placeholder="Digite seu CPF">
                                         
                                     </div>
+                                </div>
+                                <div class="input">
+                                    <label for="inputBirth" class="form-label">Nascimento</label>
+                                    <input type="date" class="form-control" id="inputBirth" >
                                 </div>
 
                                 <div class="input">
                                     <label for="inputPassword" class="form-label">Senha</label>
-                                    <input type="text" class="form-control" id="inputPassword" required>
+                                    <input type="text" class="form-control" id="inputPassword" required placeholder="Digite sua senha">
                                 </div>
 
                                 <div class="input checkPassword">
                                     <label for="checkPassword" class="form-label">Digite novamente a senha</label>
-                                    <input type="password" class="form-control" id="checkPassword" required>
+                                    <input type="password" class="form-control" id="checkPassword" required
+                                    placeholder="Confirme a senha">
                                     <button class="btn btn-outline-secondary" type="button" id="showHideButton" onclick="showHidePassword()">Mostrar/Esconder</button>
+                                    <button id="showRegisterForm" onclick="toggleForm()">Cadastrar</button>
                                 </div>
 
                                 <button type="submit" class="btn btn-primary">Enviar</button>
+
+                                <div id="loginForm" class="container-fluido" style="display: none;">
+                                    <form>
+                                        <div class="input-group">
+                                            <div class="input-box">
+                                                <div class="input">
+                                                    <label for="loginEmail" class="form-label">Email</label>
+                                                    <input type="email" class="form-control" id="loginEmail" required placeholder="Digite seu e-mail">
+                                                </div>
+                                                <div class="input">
+                                                    <label for="loginPassword" class="form-label">Senha</label>
+                                                    <input type="password" class="form-control" id="loginPassword" required placeholder="Digite sua senha">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Entrar</button>
+                                                <button id="showRegisterForm" class="btn btn-secondary mt-3">Cadastrar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
 
                             </div>
                         </div>
