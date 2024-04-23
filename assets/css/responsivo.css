@@ -118,11 +118,11 @@
   }
 
   .input-group {
-   margin-top:10rem;
     top: 25rem;
     margin-left: -12rem;
   }
   .input-box {
+    margin-top:25%;
     width: 100rem;
   }
 }
