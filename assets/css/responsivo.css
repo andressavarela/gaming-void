@@ -1,28 +1,25 @@
-@media(max-width: 980px) {
-  .about .aboutt {
-    font-size: 2.6vh;
-  }
-
-  .col-md-4 {
-    width: 60%;
-    display: flex;
-    margin-left: 20%;
-  }
-
-  #about .about-flip {
-    height: 50rem;
-    margin-left: -4rem;
-  }
-
-  .about .aboutt {
-    height: 50rem;
-    font-size: 85%;
-  }
-
-  .location .mapa {
-    top: -13%;
-    height: 83%;
-  }
+@media(max-width: 980px){
+    .about .aboutt{
+        font-size: 2.6vh;
+    }
+    .col-md-4{
+        width: 60%;
+        display: flex;
+        margin-left: 20%;
+    }
+    #about .about-flip{
+        height: 50rem;
+        margin-left: -4rem;
+    }
+    .about .aboutt{
+        height: 50rem;
+        font-size: 85%;
+    }
+    
+    .location .mapa{
+        top: -13%;
+        height: 83%;
+    } 
 }
 
 
@@ -112,13 +109,13 @@
     font-size: 20px;
     position: absolute;
     top: 45rem;
-    margin-left: 5.8rem;
+    margin-left: 6rem;
     width: 100%;
     ;
   }
 
   .input-group {
-    top: 25rem;
+    top: 10rem;
     margin-left: -12rem;
   }
   .input-box {
