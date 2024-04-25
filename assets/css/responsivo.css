@@ -31,6 +31,10 @@
   }
   .button-group{
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    display: flex;
   }
 }
 
