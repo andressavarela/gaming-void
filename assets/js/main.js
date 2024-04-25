@@ -63,7 +63,21 @@ function checkPassword() {
 
 // Função para mostrar/ocultar a senha
 function showHidePassword() {
-  const passwordInput = document.getElementById('inputPassword')
+  const passwordInput = document.getElementById('checkPassword')
+  const icon = document.getElementById('icon')
+
+  if (passwordInput.type === 'password') {
+      passwordInput.setAttribute('type', 'text')
+      icon.classList.add('hide')
+  } else {
+      passwordInput.setAttribute('type', 'password')
+      icon.classList.remove('hide')
+  }
+}
+
+// Função para mostrar/ocultar a senha
+function showHideLoginPassword() {
+  const passwordInput = document.getElementById('inputLoginPassword')
   const icon = document.getElementById('icon')
 
   if (passwordInput.type === 'password') {
@@ -107,3 +121,14 @@ document.getElementById('inputDocument').addEventListener('input', function(even
   let cpfInput = event.target
   cpfInput.value = formatarCPF(cpfInput.value)
 })
+
+// Código salvador (Andressa)
+function showSignUpForm() {
+  document.getElementById("signupForm").style.display = "block";
+  document.getElementById("loginForm").style.display = "none";
+}
+
+function showLoginForm() {
+  document.getElementById("signupForm").style.display = "none";
+  document.getElementById("loginForm").style.display = "block";
+}

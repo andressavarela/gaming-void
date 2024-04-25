@@ -22,6 +22,15 @@ main {
 
 }
 
+.navbar-collapse {
+  justify-content: center;
+  margin-right: 7%;
+}
+
+.navbar-collapse ul {
+  gap: 50px;
+}
+
 .heading {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 29px;
@@ -181,7 +190,7 @@ nav .container-fluid a:hover {
   padding: 50px;
   margin: 0;
   margin-left: 16px;
-  font-size: 15px;
+  font-size: 20px;
   border-radius: 0 0 10px 0;
   background-image: url(/assets/images/arcade-waves.jpeg);
   background-size: cover;
@@ -319,16 +328,6 @@ li {
   border-radius: 10px 10px 0 0;
 }
 
-.container-fluido {
-  width: 90%;
-  max-width: 350px;
-  margin-top: 5%;
-  margin-left: 5%;
-  flex-wrap: wrap;
-  text-align: center;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.582);
-}
 
 
 #icon {
@@ -351,55 +350,73 @@ li {
 .display-grid {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.cadastro-login {
+  display: flex;
   justify-content: center;
+  border: 2px solid rgb(25, 191, 197);
+  border-radius: 5%;
+  flex-direction: column;
+  width: 45%;
 }
 
-.register {
-  padding-top: 0;
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 5%;
+
 }
 
-.teste {
+.box-cadastro {
+  flex-wrap: wrap;
+  text-align: center;
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.text {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin-right: 20%;
-  margin-bottom: -10%;
+  width: 45%;
+  gap: 6.5rem;
+  padding-top: 2.3rem;
 }
 
-.teste h3 {
-  margin-top: -25%;
+.text h3 {
   font-size: 35px;
-  margin-bottom: 20px;
   color: rgb(6, 214, 214);
 }
 
-.teste p {
-  font-size: 18px;
+.text p {
+  font-size: 20px;
 }
 
-.teste h5 {
-  margin-top: 10%;
+.text h5 {
   color: red;
   font-size: 20px;
 }
 
+/*
 .input-box {
   margin-top: -5%;
 }
 
 .input-group {
-  margin-left: -5rem;
-}
+  
+}*/
 
 form .input {
   text-align: start;
   margin-bottom: 15px;
-
 }
 
 .input.checkPassword button {
-
   color: rgba(140, 233, 250, 0.493);
   border-color: rgba(140, 233, 250, 0.438);
 }

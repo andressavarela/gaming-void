@@ -2,6 +2,12 @@
   .about .aboutt {
     font-size: 2.6vh;
   }
+  .navbar-collapse ul{
+    gap: 0;
+  }
+  .home{
+    margin-top: 5%;
+  }
 
   .col-md-4 {
     width: 60%;
@@ -23,6 +29,9 @@
     top: -13%;
     height: 83%;
   }
+  .button-group{
+    width: 100%;
+  }
 }
 
 
@@ -32,15 +41,17 @@
     padding-top: 15%;
     overflow: hidden;
   }
-
+  .navbar-collapse ul{
+    gap: 0;
+  }
   .home .start {
     width: 100%;
     margin-left: 0;
   }
 
   #about .about-flip {
-    margin-top: 10px;
     top: 34rem;
+    margin-top: 10px;
     position: absolute;
     height: 24%;
     width: 45%;
@@ -83,41 +94,29 @@
     width: 90%;
   }
 
-  .register {
-    margin-bottom: 22rem;
-    margin-top: 5rem;
+  .register{
+    margin-top: 20%;
+  }
+  .display-grid{
+    flex-direction: column;
+    align-items: center;
   }
 
-  .register .teste {
-    margin-left: 1rem;
-    margin-top: -25rem;
-
-  }
-
-  .teste h3 {
-    width: 250%;
-    font-size: 25px;
-    z-index: 98;
-  }
-
-  .teste p {
-    width: 250%;
-    font-size: 15px;
-    z-index: 97;
-  }
-
-  .teste h5 {
-    font-size: 20px;
-    position: absolute;
-    top: 47rem;
-    margin-left: -1rem;
+  .text{
     width: 100%;
-    ;
+    margin-top: -3rem;
+    gap: 40px;
   }
 
-  .input-group {
-    top: 10rem;
-    margin-left: -9rem;
+  .cadastro-login{
+    width: 100%;
+    margin-top: 5%;
   }
 
+  .input-group{
+    justify-content: center;
+  }
+  .input-box {
+    width: 90%;
+  }
 }
