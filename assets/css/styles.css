@@ -11,15 +11,56 @@ body {
 }
 
 main {
-  padding-top: 5%;
+  padding-top: 7%;
 }
 
+.heading .community {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 29px;
+  color: rgb(0, 255, 238);
+
+}
+
+.heading .welcome{
+  color: #C646F5;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.about .welcome {
+  color: #C646F5;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about .heading{
+  color: rgb(0, 255, 238) ;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* NAVBAR */
+
+nav .container-fluid a {
+  color: rgb(164, 0, 205);
+}
+
+nav .container-fluid .navbar-brand{
+  color: white;
+}
+
+nav .container-fluid .navbar-brand:hover{
+  box-shadow: none;
+  color: rgb(164, 0, 205);
+}
 
 .navbar-expand-lg {
   position: fixed;
   width: 100%;
   z-index: 100;
-
+  box-shadow: 0px 0px 1cap #A304CD,
+    0px 1px 1cap #7C009C,
+    0px 2px 2cap #57006E,
+    0px 4px 4cap #340043;
 }
 
 .navbar-collapse {
@@ -31,25 +72,11 @@ main {
   gap: 50px;
 }
 
-.heading {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 29px;
-  color: rgb(0, 238, 222);
-  margin: 10px;
-}
-
-.titulo {
-  color: rgb(0, 238, 222);
-}
-
-/* NAVBAR */
-
-nav .container-fluid a {
-  color: white;
-}
-
 nav .container-fluid a:hover {
-  color: rgb(164, 0, 205);
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 1cap #7C009C,
+    0px 1px 1cap #57006E;
+  border-radius: 20px;
 }
 
 .c-dropdown {
@@ -93,51 +120,9 @@ nav .container-fluid a:hover {
 }
 
 .navbar-brand:hover {
-  color: rgb(164, 0, 205);
+  color: #a400cd;
   transition: 0.2s;
 
-}
-
-
-
-/*LOCALIZAÇÃO*/
-
-.location {
-  margin-top: 5%;
-  margin-left: 5%;
-  flex-wrap: wrap;
-  text-align: center;
-  position: relative;
-  width: 90%;
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.582);
-
-}
-
-.location .heading {
-  position: relative;
-  top: -4rem;
-  border: solid 1px;
-  border-radius: 10px 10px 0 0;
-}
-
-#carouselExampleInterval {
-  width: 47%;
-  height: auto;
-  display: flex;
-  position: relative;
-  top: -2rem;
-  left: 1%;
-}
-
-.location .mapa {
-  width: 47%;
-  height: 87%;
-  border-radius: 0 0 10px 0;
-  margin-top: 6%;
-  position: absolute;
-  top: -3.2rem;
-  left: 52%;
 }
 
 /*home */
@@ -211,44 +196,54 @@ nav .container-fluid a:hover {
   background-color: 0, 0, 1;
 }
 
-/* .separator {
-  border-bottom: 1px solid;
-  color: rgb(0, 238, 222);
-  height: 0%;
-} */
-
-.separator-1 {
-  height: 1px;
-  background: linear-gradient(270deg,
-      hsla(176, 100%, 47%, 0.99),
-      hsla(176, 100%, 47%, 0.34));
-}
-
+.separator-1,
 .separator-2 {
-  height: 1px;
-  background: linear-gradient(270deg,
-      hsla(176, 100%, 47%, 0.34),
-      hsla(176, 100%, 47%, 0.99));
+  -webkit-animation: color-change-2x 3s linear infinite alternate;
+  animation: color-change-2x 3s linear infinite alternate;
+  height: 3px;
 }
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #AE2FE0;
+  }
+
+  100% {
+    background: #320046;
+  }
+}
+
+@keyframes color-change-2x {
+  0% {
+    background: #AE2FE0;
+  }
+
+  100% {
+    background: #320046;
+  }
+}
+
 
 .mvv {
   margin-bottom: 100px;
-  background-image: linear-gradient(to bottom, #151a635e, #410e634d);
+  background-image: linear-gradient(to bottom, #410e634d, #123b4a5e);
   background-image: -o-repeating-linear-gradient(to botoom);
   background-position: ju;
   padding-bottom: 50px;
   padding-top: 40px;
   border-bottom: linear-gradient(270deg,
-      hsla(176, 100%, 47%, 0.34),
-      hsla(176, 100%, 47%, 0.992));
+      #AE2FE0,)(
+      #C448F6);
 }
 
 .mvv .container {
   margin-top: 10px;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .card-body .card-title {
-  color: rgb(3, 219, 201);
+  color: rgb(0, 255, 238);
   text-align: center;
   font-size: 25px;
   margin-top: 20px;
@@ -262,7 +257,7 @@ nav .container-fluid a:hover {
 }
 
 .card {
-  background-color: rgb(210, 11, 236);
+  background-color: #A304CD;
 }
 
 li {
@@ -271,61 +266,57 @@ li {
   font-size: 16px;
 }
 
-/*RODAPÉ*/
+/*LOCALIZAÇÃO*/
 
-#contactus {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.location {
+  width: 100%;
   text-align: center;
-  height: 25vh;
-  margin-top: 10%;
-}
-
-#contactus,
-#contactus p,
-#contactus strong,
-#contactus a {
-  background-color: hsl(0, 0%, 0%);
-
-}
-
-.conosco {
-  color: rgb(109, 236, 236);
-  position: relative;
-  top: 20%;
-  background-color: black;
-  height: 5;
-  font-size: 20px;
-}
-
-.void {
-  display: flex;
   justify-content: center;
-  font-size: 20px;
-  color: rgb(164, 0, 205);
-  padding-right: 1rem;
 }
 
-.contact-link {
-  text-decoration: none;
-  color: rgb(202, 243, 255);
+.location .heading {
+  border: solid 1px #C646F5;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 5%;
+  color: rgb(0, 255, 238);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.box-local {
+  display: flex;
+  gap: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 2%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.582);
+}
+
+iframe{
+height: 100%;
+}
+
+
+/*CADASTRO*/
 
 .register {
-  margin-top: 10%;
-  margin-left: 5%;
-  flex-wrap: wrap;
+  width: 100%;
   text-align: center;
+  justify-content: center;
   position: relative;
-  width: 90%;
+  margin-top: 10%;
 }
 
 .register .heading {
-  position: relative;
-  top: -2rem;
-  border: solid 1px;
+  width: 90%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  border: solid 1px #C646F5;
   border-radius: 10px 10px 0 0;
+  color: rgb(0, 255, 238);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -350,16 +341,16 @@ li {
 .display-grid {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 8%;
 }
 
 .cadastro-login {
   display: flex;
   justify-content: center;
-  border: 2px solid rgb(25, 191, 197);
+  border: 2px solid aqua;
   border-radius: 5%;
   flex-direction: column;
-  width: 45%;
+  width: 40%;
 }
 
 .button-group {
@@ -386,11 +377,16 @@ li {
   width: 45%;
   gap: 6.5rem;
   padding-top: 2.3rem;
+  margin-left: 2%;
 }
 
-.text h3 {
+.text .membro {
   font-size: 35px;
-  color: rgb(6, 214, 214);
+  color: #C646F5;
+}
+.text .GV{
+  color: rgb(0, 255, 238);
+  font-size: 35px;
 }
 
 .text p {
@@ -398,16 +394,76 @@ li {
 }
 
 .text h5 {
-  color: red;
+  color: rgba(240, 0, 0, 0.808);
   font-size: 20px;
 }
+
 
 form .input {
   text-align: start;
   margin-bottom: 15px;
 }
 
-.input.checkPassword button {
-  color: rgba(140, 233, 250, 0.493);
-  border-color: rgba(140, 233, 250, 0.438);
+button.btn {
+  background-color: #AE2FE0;
+  color: white;
+  border: none;
+  z-index: 50;
+  color: white;
+  transition: background-color 100ms ease-out, color 100ms ease-out, border-radius 100ms ease-out, box-shadow 100ms ease-out;
+}
+
+.cadastro-login .btn:hover {
+  background-color: #63008a;
+  color: white;
+  box-shadow: 
+    0px 0px 0cap #A304CD,
+    0px 0cap 1cap #7C009C,
+    0px 1cap 1cap #57006E,
+    0px 1cap 2cap #340043;
+}
+
+.input.checkPassword button, #showHideButton {
+  color: #e6d9eb;
+}
+
+/*RODAPÉ*/
+
+#contactus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 25vh;
+  margin-top: 10%;
+}
+
+#contactus,
+#contactus p,
+#contactus strong,
+#contactus a {
+  background-color: hsl(0, 0%, 0%);
+
+}
+
+.conosco {
+  color: rgb(164, 0, 205);
+  position: relative;
+  top: 20%;
+  background-color: black;
+  height: 5;
+  font-size: 20px;
+}
+
+.void {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: #640087;
+  padding-right: 1rem;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: rgb(202, 243, 255);
 }

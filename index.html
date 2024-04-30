@@ -9,6 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/responsivo.css">
+    <link rel="shortcut icon" href="./assets/images/logo.png">
 </head>
 
 <body>
@@ -43,14 +44,20 @@
         </nav>
     </header>
 
-    
+
     <main>
         <!--Página inicial-->
         <section class="home">
             <div>
-                <h1 class="heading">Bem vindo(a) à nossa<br> comunidade de jogadores!</h1>
-                <p class="start">Nosso espaço não é apenas uma loja de jogos, mas um ponto de encontro 
-                    <br>para a comunidade gamer. Aqui os jogadores podem se conectar,<br>competir e compartilhar experiências com outros entusiastas.</p>
+                <h1 class="heading">
+                    <span class="welcome">Bem vindo(a)</span> <br>
+                    <span class="community">à nossa comunidade de jogadores!</span>
+                </h1>
+
+                <p class="start">Nosso espaço não é apenas uma loja de jogos é um ponto de encontro
+                    <br>para a comunidade gamer. Aqui, os jogadores podem se conectar,<br>competir e compartilhar
+                    experiências com outros entusiastas.
+                </p>
             </div>
         </section>
 
@@ -60,8 +67,8 @@
         <!--Sobre nós-->
         <section class="about">
             <br>
-            <h2 class="heading"> GAMING VOID</h2>
-            <h3 class="heading">Conheça mais a empresa!</h2>
+            <h2 class="welcome"> GAMING VOID</h2>
+            <h3 class="heading ">Conheça mais a empresa!</h2>
                 <div id="about">
 
                     <img src="./assets/images/flip-about.jpg" alt="fliperama" class="about-flip">
@@ -92,7 +99,7 @@
                 </div>
 
                 <div class="separator-2"></div>
-                
+
                 <!-- classe -->
                 <br>
                 <h2 class="heading"> Nossa identidade </h2>
@@ -187,47 +194,52 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
-                <!--fim do about-->        
+                <!--fim do about-->
         </section>
         <!--Localização-->
-        
+
         <section class="location" id="location">
             <h2 class="heading">Localização</h2>
 
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="./assets/images/games-local.jpg" class="d-block w-100" alt="jogosPs">
+            <div class="box-local">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./assets/images/games-local.jpg" class="d-block w-100" alt="jogosPs">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="./assets/images/fliper-local.png" class="d-block w-100" alt="fliperama">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="./assets/images/shelf-games.png" class="d-block w-100" alt="prateleiras">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="./assets/images/pintall-games.png" class="d-block w-100" alt="maquinaPintall">
+                        </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="5000">
-                        <img src="./assets/images/fliper-local.png" class="d-block w-100" alt="fliperama">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="5000">
-                        <img src="./assets/images/shelf-games.png" class="d-block w-100" alt="prateleiras">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="5000">
-                        <img src="./assets/images/pintall-games.png" class="d-block w-100" alt="maquinaPintall">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <iframe class="mapa"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14623.22586826482!2d-46.6767585!3d-23.6112728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d5844309c3%3A0x2e3bed96af5d47c9!2sA%20Casa%20Do%20VideoGame!5e0!3m2!1sen!2sbr!4v1711734838215!5m2!1sen!2sbr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
 
+                </div>
+
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14623.22586826482!2d-46.6767585!3d-23.6112728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d5844309c3%3A0x2e3bed96af5d47c9!2sA%20Casa%20Do%20VideoGame!5e0!3m2!1sen!2sbr!4v1711734838215!5m2!1sen!2sbr"
+                        width="520" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </section>
 
         <section class="register" id="register">
@@ -235,9 +247,12 @@
             <div class="display-grid">
 
                 <div class="text">
-                    <h3>Torne-se um membro do<BR>Gaming Void</h3>
+                    <h3> <span class="membro"> Torne-se um membro(a)</span><BR> 
+                    <span class="GV"> Gaming Void </span></h3>
+
                     <p>Ao se cadastrar você poderá acessar nosso ambiente<br>de games e jogar a vontade, tudo isso de
-                        <strong> GRAÇA<br></strong>sem tarifas ou planos.</p>
+                        <strong> GRAÇA<br></strong>sem tarifas ou planos.
+                    </p>
                     <h5>!!ATENÇÃO!!
                         <BR>É NECESSARIO LEVAR UM DOCUMENTO DE IDENTIFICAÇÃO. MENORES SÓ PODERÃO ENTAR NO AMBIENTE DE
                         GAMES COM RESPONSÁVEIS.
@@ -266,9 +281,9 @@
                                                 <input type="email" class="form-control" id="inputEmail" required>
                                             </div>
                                             <div class="input">
-                                            <label for="inputBirth" class="form-label">Nascimento</label>
-                                            <input type="date" class="form-control" id="inputBirth">
-                                        </div>
+                                                <label for="inputBirth" class="form-label">Nascimento</label>
+                                                <input type="date" class="form-control" id="inputBirth">
+                                            </div>
                                             <div class="input">
                                                 <label for="inputDocument" class="form-label">CPF</label>
                                                 <div class="group">
@@ -323,9 +338,9 @@
             </div>
         </section>
 
+        <!--Rodapé-->
     </main>
-    
-    <!--Rodapé-->
+
     <footer id="contactus">
         <Strong class="conosco">Fale conosco</Strong>
         <BR></BR>
@@ -333,10 +348,12 @@
         <strong class="fr1">WhatsApp: <a class="contact-link">(11) 90000-0000</a>
         </strong>
 
-        <strong class="fr2">Instagram: <a class="contact-link" href="https://instagram.com" target="_blank">@gaming_void</a></strong>
+        <strong class="fr2">Instagram: <a class="contact-link" href="https://instagram.com"
+                target="_blank">@gaming_void</a></strong>
 
         <p> <strong class="fr3"> Discord:
-            </strong> <a class="contact-link" href="https://discord.com" target="_blank"> <strong class="contact-link">Comunidade GamingVoid</strong></a>
+            </strong> <a class="contact-link" href="https://discord.com" target="_blank"> <strong
+                    class="contact-link">Comunidade GamingVoid</strong></a>
         </p>
         <p class="void">GAMING VOID</p>
     </footer>
