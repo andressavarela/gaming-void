@@ -4,7 +4,7 @@ Site criado para a aula de Desenvolvimento de Software para Web.
  
 <p align="center">
  
-<img width="700px" src="./readme/site-about.png"/>
+<img width="700px" src="./readme/site-readme.png"/>
 
 </p>
 
