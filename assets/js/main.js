@@ -16,12 +16,20 @@ function validarCPF(cpf) {
       return false
   }
 
+  document.getElementById('signupForm').addEventListener('submit', function (event) {
+    var cpf = document.getElementById('inputDocument').value;
+    if (!validarCPF(cpf)) {
+        alert('CPF inválido!');
+        event.preventDefault(); // Impede o envio do formulário se o CPF for inválido
+    }
+})
+
+
   // Calcula o primeiro dígito verificador
   let soma = 0
   for (let i = 0; i < 9; i++) {
       soma += parseInt(cpf.charAt(i)) * (10 - i)
   }
-
 
 
   
@@ -101,20 +109,21 @@ function formatarCPF(cpf) {
 // Adiciona evento de envio do formulário
 document.getElementById('registrationForm').addEventListener('submit', function(event) {
   event.preventDefault() // Impede o envio do formulário
-
+  
   // Valida o CPF
   let cpf = document.getElementById('inputDocument').value
   if (!validarCPF(cpf)) {
       alert('CPF inválido!')
       return
   }
-
+  
   // Verifica se as senhas coincidem
   checkPassword()
 
   // Substitua isso por seu código para enviar o formulário ou realizar outras ações
   alert('Formulário enviado com sucesso!')
 })
+
 
 // Adiciona evento de formatação do CPF enquanto o usuário digita
 document.getElementById('inputDocument').addEventListener('input', function(event) {
