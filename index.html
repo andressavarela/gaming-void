@@ -267,44 +267,46 @@
 
                     <div class="box-cadastro">
                         <div id="registrationForm">
-                            <form id="signupForm" class="registration-form" action="#">
+                            <form id="signupForm" class="registration-form" action="recebeDados.php" method="post">
                                 <div class="register-forgot">
                                     <div class="input-group">
                                         <div class="input-box">
                                             <div class="input">
                                                 <label for="inputName" class="form-label">Nome Completo</label>
-                                                <input type="text" class="form-control" id="inputName" size="50"
+                                                <input type="text" class="form-control" name="fName" id="inputName" size="50"
                                                     required>
                                             </div>
                                             <div class="input">
                                                 <label for="inputEmail" class="form-label">Email</label>
-                                                <input type="email" class="form-control" id="inputEmail" required>
+                                                <input type="email" class="form-control" name="fEmail" id="inputEmail" required>
                                             </div>
                                             <div class="input">
                                                 <label for="inputBirth" class="form-label">Nascimento</label>
-                                                <input type="date" class="form-control" id="inputBirth">
+                                                <input type="date" class="form-control" name="fBirth" id="inputBirth">
                                             </div>
                                             <div class="input">
                                                 <label for="inputDocument" class="form-label">CPF</label>
                                                 <div class="group">
-                                                    <input type="text" class="form-control" id="inputDocument" required
+                                                    <input type="text" class="form-control" name="fDocument" id="inputDocument" required
                                                         maxlength="14">
                                                 </div>
                                             </div>
 
                                             <div class="input">
                                                 <label for="inputPassword" class="form-label">Senha</label>
-                                                <input type="password" class="form-control" id="inputPassword" required>
+                                                <input type="password" class="form-control" name="fPassword" id="inputPassword" required>
                                             </div>
                                             <div class="input checkPassword">
                                                 <label for="checkPassword" class="form-label">Digite novamente a
                                                     senha</label>
-                                                <input type="password" class="form-control" id="checkPassword" required>
+                                                <input type="password" class="form-control" name="fPassword" id="checkPassword" required>
                                                 <button class="btn btn-outline-secondary" type="button"
                                                     id="showHideButton"
                                                     onclick="showHidePassword()">Mostrar/Esconder</button>
                                             </div>
-                                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                            <!-- <button type="submit" class="btn btn-primary">Cadastrar</button> -->
+                                            <input type="submit" class="btn btn-primary" value="cadastrar">
+
                                         </div>
                                     </div>
                                 </div>
