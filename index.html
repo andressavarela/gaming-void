@@ -245,11 +245,11 @@
         <section class="register" id="register">
             <h2 class="heading">Cadastro</h2>
             <div class="display-grid">
-
+        
                 <div class="text">
                     <h3> <span class="membro"> Torne-se um membro(a)</span><BR> 
                     <span class="GV"> Gaming Void </span></h3>
-
+        
                     <p>Ao se cadastrar você poderá acessar nosso ambiente<br>de games e jogar a vontade, tudo isso de
                         <strong> GRAÇA<br></strong>sem tarifas ou planos.
                     </p>
@@ -259,22 +259,28 @@
                     </h5>
                 </div>
 
+                <div id="successPopup" class="popup" style="display: none;">
+                    <div class="popup-content">
+                      <span class="close" onclick="closePopup()">&times;</span>
+                      <p>Você já está cadastrado, venha nos visitar quando quiser!</p>
+                    </div>
+                  </div>
+        
                 <div class="cadastro-login">
                     <div class="button-group">
                         <button class="btn btn-primary" onclick="showSignUpForm()">Cadastre-se</button>
                         <button class="btn btn-primary" onclick="showLoginForm()">Cheque se já possui uma conta</button>
                     </div>
-
+        
                     <div class="box-cadastro">
                         <div id="registrationForm">
-                            <form id="signupForm" class="registration-form" action="recebeDados.php" method="post">
+                            <form id="signupForm" class="registration-form" onsubmit="submitForm(event, 'signupForm', 'recebeDados.php')">
                                 <div class="register-forgot">
                                     <div class="input-group">
                                         <div class="input-box">
                                             <div class="input">
                                                 <label for="inputName" class="form-label">Nome Completo</label>
-                                                <input type="text" class="form-control" name="fName" id="inputName" size="50"
-                                                    required>
+                                                <input type="text" class="form-control" name="fName" id="inputName" size="50" required>
                                             </div>
                                             <div class="input">
                                                 <label for="inputEmail" class="form-label">Email</label>
@@ -287,11 +293,10 @@
                                             <div class="input">
                                                 <label for="inputDocument" class="form-label">CPF</label>
                                                 <div class="group">
-                                                    <input type="text" class="form-control" name="fDocument" id="inputDocument" required
-                                                        maxlength="14">
+                                                    <input type="text" class="form-control" name="fDocument" id="inputDocument" required maxlength="14">
                                                 </div>
                                             </div>
-
+        
                                             <div class="input">
                                                 <label for="inputPassword" class="form-label">Senha</label>
                                                 <input type="password" class="form-control" name="fPassword" id="inputPassword" required>
@@ -300,29 +305,26 @@
                                                 <label for="checkPassword" class="form-label">Digite novamente a
                                                     senha</label>
                                                 <input type="password" class="form-control" name="fPassword" id="checkPassword" required>
-                                                <button class="btn btn-outline-secondary" type="button"
-                                                    id="showHideButton"
-                                                    onclick="showHidePassword()">Mostrar/Esconder</button>
+                                                <button class="btn btn-outline-secondary" type="button" id="showHideButton" onclick="showHidePassword()">Mostrar/Esconder</button>
                                             </div>
-                                            <!-- <button type="submit" class="btn btn-primary">Cadastrar</button> -->
-                                            <input type="submit" class="btn btn-primary" value="cadastrar">
-
+                                            <button type="submit" class="btn btn-primary">Cadastrar</button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
                         </div>
+                        <!-- Login -->
                         <div id="loginForm" style="display: none;">
-                            <form id="loginForm" class="login-form" action="#">
+                            <form id="loginForm" class="login-form" onsubmit="submitForm(event, 'loginForm', 'buscaDados.php')">
                                 <div class="input-group">
                                     <div class="input-box">
                                         <div class="input">
                                             <label for="inputLoginEmail" class="form-label">Email</label>
-                                            <input type="email" class="form-control" id="inputLoginEmail" required>
+                                            <input type="email" class="form-control" id="inputLoginEmail" name="fEmail" required>
                                         </div>
                                         <div class="input">
                                             <label for="inputLoginPassword" class="form-label">Senha</label>
-                                            <input type="password" class="form-control" id="inputLoginPassword"
+                                            <input type="password" class="form-control" id="inputLoginPassword" name="fPassword"
                                                 required>
                                             <button class="btn btn-outline-secondary" type="button" id="showHideButton"
                                                 onclick="showHideLoginPassword()">Mostrar/Esconder</button>
@@ -332,13 +334,11 @@
                                 </div>
                             </form>
                         </div>
+
                     </div>
                 </div>
-
-
-
             </div>
-        </section>
+        </section>        
 
         <!--Rodapé-->
     </main>
