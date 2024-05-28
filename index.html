@@ -259,6 +259,7 @@
                     </h5>
                 </div>
 
+                <!-- TENTATIVA DE FAZER O POP UP do form de login -->
                 <div id="successPopup" class="popup" style="display: none;">
                     <div class="popup-content">
                       <span class="close" onclick="closePopup()">&times;</span>
@@ -274,7 +275,7 @@
         
                     <div class="box-cadastro">
                         <div id="registrationForm">
-                            <form id="signupForm" class="registration-form" onsubmit="submitForm(event, 'signupForm', 'recebeDados.php')">
+                            <form id="signupForm" class="registration-form" action="./recebeDados.php" method="post">
                                 <div class="register-forgot">
                                     <div class="input-group">
                                         <div class="input-box">

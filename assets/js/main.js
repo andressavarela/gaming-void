@@ -110,38 +110,38 @@ function showHideLoginPassword() {
   }
 }
 
-// Função para enviar formulários via Fetch API
-function submitForm(event, formId, url) {
-  event.preventDefault();
-  const form = document.getElementById(formId);
-  const formData = new FormData(form);
+// // Função para enviar formulários via Fetch API
+// function submitForm(event, formId, url) {
+//   event.preventDefault();
+//   const form = document.getElementById(formId);
+//   const formData = new FormData(form);
   
-  fetch(url, {
-      method: 'GET', // Altere para 'POST' se o seu script PHP usar POST
-      body: formData
-  })
-  .then(response => response.json())
-  .then(data => {
-      console.log('Success:', data);
-      if (data.status === 'success' && formId === 'loginForm') {
-          showPopup();
-      } else {
-          alert(data.message || 'Formulário enviado com sucesso!');
-      }
-      form.reset();
-  })
-  .catch((error) => {
-      console.error('Error:', error);
-      alert('Erro ao enviar o formulário.');
-  });
-}
+//   fetch(url, {
+//       method: 'GET', // Altere para 'POST' se o seu script PHP usar POST
+//       body: formData
+//   })
+//   .then(response => response.json())
+//   .then(data => {
+//       console.log('Success:', data);
+//       if (data.status === 'success' && formId === 'loginForm') {
+//           showPopup();
+//       } else {
+//           alert(data.message || 'Formulário enviado com sucesso!');
+//       }
+//       form.reset();
+//   })
+//   .catch((error) => {
+//       console.error('Error:', error);
+//       alert('Erro ao enviar o formulário.');
+//   });
+// }
 
-function showPopup() {
-  const popup = document.getElementById('successPopup');
-  popup.style.display = 'block';
-}
+// function showPopup() {
+//   const popup = document.getElementById('successPopup');
+//   popup.style.display = 'block';
+// }
 
-function closePopup() {
-  const popup = document.getElementById('successPopup');
-  popup.style.display = 'none';
-}
+// function closePopup() {
+//   const popup = document.getElementById('successPopup');
+//   popup.style.display = 'none';
+// }
