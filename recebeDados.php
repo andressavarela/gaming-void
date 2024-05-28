@@ -25,12 +25,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Execute a declaração
         try {
             $sql->execute();
-            echo "Registro inserido com sucesso!";
+            echo "<script>alert('Conta criada com sucesso!'); 
+            location = '/gaming-void-develop/#register';</script>";
+            exit();
         } catch (PDOException $e) {
-            echo "Erro ao inserir registro: " . $e->getMessage();
+            echo "<script>alert('Erro ao registrar!'); 
+            location = './index.html';</script>". $e->getMessage();
         }
     } else {
-        echo "Erro ao preparar a declaração: " . $conectar->error;
+        $errorInfo = $conectar->errorInfo();
+        echo "Erro ao preparar a declaração: " . $errorInfo[2];
     }
 
     // Feche a conexão
