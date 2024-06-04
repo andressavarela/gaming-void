@@ -23,11 +23,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Verifique se o usuário foi encontrado
             if ($sql->rowCount() > 0) {
                 echo "<script>alert('Sua conta já existe!'); 
-                    location = '/gaming-void-develop/#register';</script>";
+                    location = './#register';</script>";
                 exit();
             } else {
                 echo "<script>alert('Sua conta não existe! Se registre, por favor'); 
-                location = '/gaming-void-develop/#register';</script>";
+                location = './#register';</script>";
                 exit();
             }
 
