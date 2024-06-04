@@ -23,12 +23,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Mostrar alerta de sucesso
         echo "<script>alert('Senha redefinida com sucesso!'); 
-                    location = '/gaming-void-develop/#register';</script>";
+                    location = './#register';</script>";
                 exit();
     } else {
         // O email não está cadastrado, mostrar alerta de erro
         echo "<script>alert('Esse email não está cadastrado.'); 
-                    location = '/gaming-void-develop/#register';</script>";
+                    location = './#register';</script>";
                 exit();
     }
 } else {
