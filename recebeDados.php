@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         try {
             $sql->execute();
             echo "<script>alert('Conta criada com sucesso!'); 
-            location = '/gaming-void-develop/#register';</script>";
+            location = './#register';</script>";
             exit();
         } catch (PDOException $e) {
             echo "<script>alert('Erro ao registrar!'); 
